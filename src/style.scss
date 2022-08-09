@@ -1,0 +1,66 @@
+@import url('https://fonts.google.com/specimen/Manrope');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+.app {
+  background-color: hsl(218, 23%, 16%);
+}
+
+.quote-item {
+  background-color: hsl(217, 19%, 24%);
+  height: 50%;
+  max-height: 360px;
+  @media screen and (max-width: 600px) {
+    height: 70%;
+    max-height: 460px;
+  }
+  > div {
+    h1 {
+      color: hsl(150, 100%, 66%);
+      font-weight: 600;
+    }
+    p {
+      color: hsl(193, 38%, 86%);
+      font-weight: 800;
+      font-size: 26px;
+    }
+  }
+}
+
+.icons {
+  position: absolute;
+  left: 0;
+  bottom: -26px;
+  width: 100%;
+  .pause-icon {
+    border-bottom: 2px solid hsl(217, 19%, 38%);
+    svg {
+      width: 34px;
+      height: 34px;
+      fill: hsl(193, 38%, 86%);
+      background-color: hsl(217, 19%, 24%);
+      padding: 6px;
+      position: relative;
+      bottom: -16px;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+  }
+  .btn-random {
+    margin-top: 20px;
+    svg {
+      background-color: hsl(150, 100%, 66%);
+      fill: hsl(218, 23%, 16%);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      padding: 12px;
+      margin: 0 auto;
+    }
+  }
+}
