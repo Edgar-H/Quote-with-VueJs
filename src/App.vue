@@ -1,13 +1,13 @@
 <script setup>
 import { ref } from 'vue';
 import { quotes } from '@/assets/quotes.json';
-import { getRandomNumber } from '@/assets/RandomColor.js';
 import QuoteBox from '@/components/QuoteBox.vue';
 
 const cunterQuote = quotes.length;
 const quote = ref({});
 
 const randomQuote = () => {
+  const getRandomNumber = (number) => Math.floor(Math.random() * number);
   const quoteRandom = quotes[getRandomNumber(cunterQuote)];
   quote.value = quoteRandom;
 };
